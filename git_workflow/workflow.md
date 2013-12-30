@@ -31,9 +31,7 @@ of commits to fix an issue in an already-merged branch.
 ### Bugfix ###
 
 The *bugfix* branch holds fixes to the current stable code.  Fixes from this
-branch should be merged into *master* and *develop*.  If a fix occurs
-that only affects the stable code in *master* but not the code in *develop*,
-it is permissible to only merge it into *master*.
+branch should be merged into *master* and *develop*.
 
 Minor Branches
 --------------
