@@ -1,0 +1,11 @@
+{
+  "name": "(Bowler) Hats Off to Git",
+  "description": "An introduction to Git for Neutron Robotics and the Bolwer Team",
+  "sections": [
+    { "section": "overview" },
+    { "section": "git_info" },
+    { "section": "git_workflow" },
+    { "section": "github_info" },
+    { "section": "closing_remarks" }
+  ]
+}
