@@ -1,0 +1,748 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>(Bowler) Hats Off to Git</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+
+  <link rel="stylesheet" href=".//css/reset.css" type="text/css"/>
+
+  <link type="text/css" href=".//css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href=".//css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href=".//css/sh_style.css" rel="stylesheet" />
+  <link type="text/css" href=".//css/tipsy.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href=".//css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src=".//js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src=".//js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src=".//js/jquery-print.js"></script>
+  <script type="text/javascript" src=".//js/jquery.batchImageLoad.js"></script>
+  <script type="text/javascript" src=".//js/jquery.parsequery.min.js"></script>
+  <script type="text/javascript" src=".//js/jquery.doubletap-0.1.js"></script>
+  <script type="text/javascript" src=".//js/jquery.tipsy.js"></script>
+
+  <script type="text/javascript" src=".//js/fg.menu.js"></script>
+  <script type="text/javascript" src=".//js/showoff.js"></script>
+  <script type="text/javascript" src=".//js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src=".//js/sh_main.min.js"></script>
+  <script type="text/javascript" src=".//js/core.js"></script>
+  <script type="text/javascript" src=".//js/showoffcore.js"></script>
+  <script type="text/javascript" src=".//js/coffee-script.js"></script>
+
+  
+    
+  
+
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+<a tabindex="1" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="stylemenu"><span class="ui-icon ui-icon-triangle-1-s"></span>styles</a>
+<div id="stylepicker" class="hidden"></div>
+
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">g</td><td>toggle follow</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+    <tr><td class="key">P</td><td>toggle pause</td></tr>
+    <tr><td class="key">s</td><td>choose style</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso"><center>loading presentation...</center></div>
+<div id="footer">
+  <span id="followMode"></span>
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+  <span id="slideFilename"></span>
+  <img id="disconnected" src="/css/disconnected.png" />
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div id="overview/01_intro" class="slide " data-transition="none"><div class="content " ref="overview/01_intro/1">
+<h1>(Bowler) Hats Off to Git</h1>
+
+<h2>An introduction to Git and GitHub for the Bowler Team</h2>
+</div>
+</div><div id="overview/01_intro" class="slide incremental bullets" data-transition="cover"><div class="content incremental bullets" ref="overview/01_intro/2">
+<h1>What is Git?</h1>
+
+<ul>
+<li>a <strong>V</strong>ersion <strong>C</strong>ontrol <strong>S</strong>ystem</li>
+<li>a <strong>S</strong>ource <strong>C</strong>ode <strong>M</strong>anagement tool</li>
+<li>not a <strong>S</strong>ource <strong>C</strong>ode <strong>M</strong>anagement tool</li>
+<li>Distributed</li>
+<li>Fast</li>
+<li>Easy</li>
+</ul>
+</div>
+</div><div id="overview/01_intro" class="slide incremental bullets" data-transition="none"><div class="content incremental bullets" ref="overview/01_intro/3">
+<h1>Why Git?</h1>
+
+<ul>
+<li>Distributed</li>
+<li>Simple branching</li>
+<li>Faster than Mercurial</li>
+</ul>
+</div>
+</div><div id="overview/01_intro" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="overview/01_intro/4">
+<h1>Why GitHub?</h1>
+
+<ul>
+<li>Lightweight, flexible bug tracker</li>
+<li>Designed around Git</li>
+<li>Good commit hooks/API</li>
+<li>Easy-to-use site hosting</li>
+<li>Autorenders Markup (good for documentation)</li>
+</ul>
+</div>
+</div><div id="overview/01_intro" class="slide " data-transition="none"><div class="content " ref="overview/01_intro/5">
+<h1>Why Not SVN?</h1>
+
+<p>Oh, let me count the reasons!</p>
+</div>
+</div><div id="overview/01_intro" class="slide " data-transition="none"><div class="content " ref="overview/01_intro/6">
+<h2>Centralized Instead of Distributed</h2>
+</div>
+</div><div id="overview/01_intro" class="slide " data-transition="none"><div class="content " ref="overview/01_intro/7">
+<h2>Branches Are Not As Easy to Use</h2>
+</div>
+</div><div id="overview/01_intro" class="slide " data-transition="none"><div class="content " ref="overview/01_intro/8">
+<h2>Git Has a Better Merge Algorithm</h2>
+</div>
+</div><div id="overview/02_TOC" class="slide " data-transition="cover"><div class="content " ref="overview/02_TOC">
+<h1>Sections</h1>
+
+<ul>
+<li><strong>Overview</strong></li>
+<li>How To Git</li>
+<li>Git Workflow</li>
+<li>How To GitHub</li>
+<li>Closing Remarks</li>
+</ul>
+</div>
+</div><div id="git_info/01_TOC" class="slide " data-transition="cover"><div class="content " ref="git_info/01_TOC">
+<h1>Sections</h1>
+
+<ul>
+<li>Overview</li>
+<li><strong>How To Git</strong></li>
+<li>Git Workflow</li>
+<li>How To GitHub</li>
+<li>Closing Remarks</li>
+</ul>
+</div>
+</div><div id="git_info/02_usage" class="slide " data-transition="cover"><div class="content " ref="git_info/02_usage/1">
+<h1>How To Git</h1>
+</div>
+</div><div id="git_info/02_usage" class="slide commandline incremental" data-transition="none"><div class="content commandline incremental" ref="git_info/02_usage/2">
+<h1>Get a Project</h1>
+
+<pre><code><code class="command">$ git clone \
+  git@github.com:NeutronRobotics/bowler_style_information.git</code>
+<code class="result">Cloning into 'bowler_style_information'...
+remote: Counting objects: 20, done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 20 (delta 1), reused 16 (delta 1)
+Receiving objects: 100% (20/20), 6.42 KiB, done.
+Resolving deltas: 100% (1/1), done.
+</code><code class="command">$ cd bowler_style_information</code>
+<code class="command">$ git status</code>
+<code class="result"> # On branch master
+ nothing to commit, working directory clean
+</code></code></pre>
+</div>
+</div><div id="git_info/02_usage" class="slide subsection" data-transition="cover"><div class="content subsection" ref="git_info/02_usage/3">
+<h1>The Git Process</h1>
+
+<p>Git is a bit wierd...</p>
+</div>
+</div><div id="git_info/02_usage" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="git_info/02_usage/4">
+<h1>Life Cycle</h1>
+
+<ol>
+<li>
+<strong>untracked</strong>: not in the repository</li>
+<li>
+<strong>unmodified</strong>: in the repository, not modified</li>
+<li>[<code>vim xyz</code>] <strong>modified</strong>: edited, but the edits have not been recorded</li>
+<li>[<code>git add xyz</code>] <strong>staged</strong>: the <em>edits</em> (not the whole file) are staged to be committed</li>
+<li>[<code>git commit</code>] <strong>comitted</strong>: the <em>edits</em> are stored as a commit in your local repository</li>
+</ol>
+</div>
+</div><div id="git_info/02_usage" class="slide " data-transition="none"><div class="content " ref="git_info/02_usage/5">
+<h1>Wait, WTF Does "Staged" Means?</h1>
+</div>
+</div><div id="git_info/02_usage" class="slide smbullets incremental" data-transition="none"><div class="content smbullets incremental" ref="git_info/02_usage/6">
+<h1>Staged Changes</h1>
+
+<ul>
+<li>once changes have been made, they must be staged</li>
+<li>changes go into the "index" (staging area), not files</li>
+<li>a given file can show as both staged and unstaged</li>
+<li>this lets us add only certain changes in a file to a commit</li>
+<li>the index also lets us specify which files to "stash" (discussed later),
+mark conflicts as resolved, and more</li>
+</ul>
+</div>
+</div><div id="git_info/02_usage" class="slide " data-transition="none"><div class="content " ref="git_info/02_usage/7">
+<h1>Remember!</h1>
+</div>
+</div><div id="git_info/02_usage" class="slide commandline incremental" data-transition="none"><div class="content commandline incremental" ref="git_info/02_usage/8">
+<h1>To Stage Files:</h1>
+
+<pre><code><code class="command">$ git add .</code>
+<code class="result">
+or
+
+</code><code class="command">$ git add xyz</code>
+<code class="result">
+or
+
+</code><code class="command">$ git add --patch xyz</code>
+<code class="result">
+or
+
+</code><code class="command">$ git add --edit xyz</code>
+</code></pre>
+</div>
+</div><div id="git_info/02_usage" class="slide commandline incremental" data-transition="none"><div class="content commandline incremental" ref="git_info/02_usage/9">
+<h1>To commit staged changes:</h1>
+
+<pre><code><code class="command">$ git commit</code>
+</code></pre>
+</div>
+</div><div id="git_info/02_usage" class="slide commandline incremental" data-transition="none"><div class="content commandline incremental" ref="git_info/02_usage/10">
+<h1>To unstage changes:</h1>
+
+<pre><code><code class="command">$ git reset HEAD xyz</code>
+</code></pre>
+</div>
+</div><div id="git_info/02_usage" class="slide commandline incremental" data-transition="none"><div class="content commandline incremental" ref="git_info/02_usage/11">
+<h1>To discard unstaged changes:</h1>
+
+<pre><code><code class="command">$ git checkout xyz</code>
+</code></pre>
+</div>
+</div><div id="git_info/02_usage" class="slide commandline incremental" data-transition="none"><div class="content commandline incremental" ref="git_info/02_usage/12">
+<h1>To push (the current branch) changes to a remote</h1>
+
+<pre><code><code class="command">$ git push remote-name remote-branch-name</code>
+</code></pre>
+</div>
+</div><div id="git_info/02_usage" class="slide " data-transition="none"><div class="content " ref="git_info/02_usage/13">
+<h1>Whoah, whoah, whoah, what is a "remote"?</h1>
+</div>
+</div><div id="git_info/02_usage" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="git_info/02_usage/14">
+<h1>Remotes are...</h1>
+
+<ul>
+<li>any non-local repository</li>
+<li>a repository on the machine of another developer</li>
+<li>a central repository on GitHub</li>
+</ul>
+</div>
+</div><div id="git_info/02_usage" class="slide subsection" data-transition="cover"><div class="content subsection" ref="git_info/02_usage/15">
+<h1>Altering the Timeline</h1>
+
+<h2>Branching, Merging, Rebasing, and Stashing</h2>
+</div>
+</div><div id="git_info/02_usage" class="slide " data-transition="none"><div class="content " ref="git_info/02_usage/16">
+<h1>Replaying and the Branching Timeline</h1>
+
+<p>In the following sections, you will see the phrase
+<em>replay the changes</em>.  To understand what this means,
+think of the Git timeline as a series of beeps on a
+audio file, where each beep is a commit.  When you <em>replay</em>
+changes over an existing set of changes, it is like playing two
+of the beeping audio files at the same time, and then saving the
+results.  The resulting file is the interleaving of the two sets
+of beeps.</p>
+</div>
+</div><div id="git_info/02_usage" class="slide commandline incremental" data-transition="none"><div class="content commandline incremental" ref="git_info/02_usage/17">
+<h1>Branching</h1>
+
+<p>To create and then switch:</p>
+
+<pre><code><code class="command">$ git checkout -b some-new-branch</code>
+</code></pre>
+
+<p>To switch later:</p>
+
+<pre><code><code class="command">$ git checkout some-existing-branch</code>
+</code></pre>
+
+<p>To delete a (merged) branch:</p>
+
+<pre><code><code class="command">$ git branch -d branch-name</code>
+</code></pre>
+
+<p>To force-delete any branch</p>
+
+<pre><code><code class="command">$ git branch -D branch-name</code>
+</code></pre>
+</div>
+</div><div id="git_info/02_usage" class="slide commandline incremental" data-transition="none"><div class="content commandline incremental" ref="git_info/02_usage/18">
+<h1>Merging</h1>
+
+<p>Pulls the changes from another set of commits (a branch, etc)
+into the current branch, replaying the current new commits
+onto the current branch and <strong>then recording the results in
+a new commit</strong></p>
+
+<pre><code><code class="command">$ git merge other-branch-name</code>
+</code></pre>
+
+<p>(or from a remote -- rebasing is preferred to this, though)</p>
+
+<pre><code><code class="command">$ git pull remote remote-branch</code>
+</code></pre>
+</div>
+</div><div id="git_info/02_usage" class="slide commandline incremental" data-transition="none"><div class="content commandline incremental" ref="git_info/02_usage/19">
+<h1>Rebasing</h1>
+
+<p>Alters history, changing history without making a new commit</p>
+
+<p>Replay another branch over this one:</p>
+
+<pre><code><code class="command">$ git rebase branch-name</code>
+</code></pre>
+
+<p>Pull a new set of changes from a remote:</p>
+
+<pre><code><code class="command">$ git pull --rebase remote remote-branch</code>
+</code></pre>
+
+<p>Manipulate the timeline directly:</p>
+
+<pre><code><code class="command">$ git rebase --interactive revision-specifier</code>
+</code></pre>
+</div>
+</div><div id="git_info/02_usage" class="slide " data-transition="none"><div class="content " ref="git_info/02_usage/20">
+<h1>Wait, how is that different from merging?</h1>
+
+<p><strong>Merging</strong> is like sticking a signpost on the timeline saying
+<em>"here git, there are some other changes for you to
+consider over the history of time"</em></p>
+
+<p><strong>Rebasing</strong> is like saying:
+<em>"what do you mean git, Julius Caesar always had a laser pistol?,
+I don't know what you're talking about.  Pfft, changing history!"</em></p>
+</div>
+</div><div id="git_info/02_usage" class="slide smbullets" data-transition="none"><div class="content smbullets" ref="git_info/02_usage/21">
+<h1>So when should I use what?</h1>
+
+<ul>
+<li><p>Use <strong>merging</strong> when you want an official record of the timeline changes,
+such when you want to put your changes from a feature branch into
+develop</p></li>
+<li><p>Use <strong>rebasing</strong> when you want to seamless change history, such as when
+you pull changes from the GitHub repository</p></li>
+<li><p>Use <strong>rebasing</strong> when you want to change how your commits looked in the past,
+such as when you want to clean up a series of commits or fix an issue in an
+older commit.</p></li>
+</ul>
+</div>
+</div><div id="git_info/02_usage" class="slide " data-transition="none"><div class="content " ref="git_info/02_usage/22">
+<h1>The Rebasing Prime Directive:</h1>
+
+<h2><strong>Only ever rebase if it will not conflict with the timeline of someone else</strong></h2>
+</div>
+</div><div id="git_info/02_usage" class="slide " data-transition="none"><div class="content " ref="git_info/02_usage/23">
+<h1>I had another question, though:</h1>
+
+<h2>What is a revision specifier?</h2>
+</div>
+</div><div id="git_info/02_usage" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="git_info/02_usage/24">
+<h1>A revision specifier is...</h1>
+
+<ul>
+<li>a single commit SHA or short SHA</li>
+<li>a RefLog name (e.g. <code>HEAD@{0}</code>)</li>
+<li>a ancestor of a commit ('~' or '^' after an one of the above)</li>
+<li>a range (using '..' or '...') of any of the above</li>
+</ul>
+
+<p>See <a href="http://git-scm.com/book/en/Git-Tools-Revision-Selection">http://git-scm.com/book/en/Git-Tools-Revision-Selection</a></p>
+</div>
+</div><div id="git_info/02_usage" class="slide commandline incremental" data-transition="none"><div class="content commandline incremental" ref="git_info/02_usage/25">
+<h1>Stashing</h1>
+
+<p>Puts the currents in a separate pocket to be taken out later
+(numbered in a stack-like manner):</p>
+
+<pre><code><code class="command">$ git stash</code>
+</code></pre>
+
+<p>(or only the unstaged changes)</p>
+
+<pre><code><code class="command">$ git stash --keep-index</code>
+</code></pre>
+
+<p>Apply the contents of the stash:</p>
+
+<pre><code><code class="command">$ git stash apply [stash@{number}]</code>
+</code></pre>
+
+<p>Apply then remove:</p>
+
+<pre><code><code class="command">$ git stash pop [stash@{number}]</code>
+</code></pre>
+</div>
+</div><div id="git_info/02_usage" class="slide commandline incremental" data-transition="none"><div class="content commandline incremental" ref="git_info/02_usage/26">
+<p>Remove:</p>
+
+<pre><code><code class="command">$ git stash remove [stash@{number}]</code>
+</code></pre>
+
+<p>Start a branch from a stash:</p>
+
+<pre><code><code class="command">$ git stash branch branch-name [stash@{number}]</code>
+</code></pre>
+
+<p>List all stashes:</p>
+
+<pre><code><code class="command">$ git stash list</code>
+</code></pre>
+
+<p>Show information about a stash:</p>
+
+<pre><code><code class="command">$ git stash show [stash@{number}]</code>
+</code></pre>
+</div>
+</div><div id="git_info/02_usage" class="slide subsection" data-transition="cover"><div class="content subsection" ref="git_info/02_usage/27">
+<h1>Tags</h1>
+
+<p>Like bookmarks in time...</p>
+</div>
+</div><div id="git_info/02_usage" class="slide commandline incremental" data-transition="none"><div class="content commandline incremental" ref="git_info/02_usage/28">
+<h1>Tagging</h1>
+
+<p>A tag is really just a name for a particular point in history</p>
+
+<p>List all tags:</p>
+
+<pre><code><code class="command">$ git tag</code>
+</code></pre>
+
+<p>Search all tags with filter:</p>
+
+<pre><code><code class="command">$ git tag -l 'pattern'</code>
+</code></pre>
+
+<p>Create a lightweight tag:</p>
+
+<pre><code><code class="command">$ git tag tag-name [revision]</code>
+</code></pre>
+
+<p>Create an annotated tag:</p>
+
+<pre><code><code class="command">$ git tag -a tag-name [revision]</code>
+</code></pre>
+</div>
+</div><div id="git_info/02_usage" class="slide commandline incremental" data-transition="none"><div class="content commandline incremental" ref="git_info/02_usage/29">
+<p>Note that you must explicitly push tags to remotes:</p>
+
+<pre><code><code class="command">$ git push remote-name tag-name</code>
+</code></pre>
+
+<p>You can also create and verify GPG-signed tags, if you really want to:</p>
+
+<pre><code><code class="command">$ git tag -s tag-name [revision]</code>
+<code class="command">$ git tag -v tag-name</code>
+</code></pre>
+</div>
+</div><div id="git_workflow/01_TOC" class="slide " data-transition="cover"><div class="content " ref="git_workflow/01_TOC">
+<h1>Sections</h1>
+
+<ul>
+<li>Overview</li>
+<li>How To Git</li>
+<li><strong>Git Workflow</strong></li>
+<li>How To GitHub</li>
+<li>Closing Remarks</li>
+</ul>
+</div>
+</div><div id="git_workflow/02_workflow" class="slide " data-transition="cover"><div class="content " ref="git_workflow/02_workflow/1">
+<h1>Branching Workflow</h1>
+</div>
+</div><div id="git_workflow/02_workflow" class="slide center" data-transition="none"><div class="content center" ref="git_workflow/02_workflow/2">
+<h1>The General Idea</h1>
+
+<p><img src="http://git-scm.com/figures/18333fig0319-tn.png" alt="Master-Develop-Feature Branching Workflow"/></p>
+</div>
+</div><div id="git_workflow/02_workflow" class="slide center" data-transition="none"><div class="content center" ref="git_workflow/02_workflow/3">
+<h2>The Overly-Complicated Version</h2>
+
+<p><img src="./file/git_workflow/git-flow.horiz.png" alt="Git-Flow"/></p>
+</div>
+</div><div id="git_workflow/02_workflow" class="slide " data-transition="none"><div class="content " ref="git_workflow/02_workflow/4">
+<h1>So what are we using?</h1>
+
+<p>Somewhere in between...</p>
+</div>
+</div><div id="git_workflow/02_workflow" class="slide subsection" data-transition="cover"><div class="content subsection" ref="git_workflow/02_workflow/5">
+<h1>Main Branches</h1>
+
+<p>Always there to comfort you...</p>
+</div>
+</div><div id="git_workflow/02_workflow" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="git_workflow/02_workflow/6">
+<h1>Master</h1>
+
+<ul>
+<li>holds stable code</li>
+<li>should be really stable</li>
+<li>is pointed to by version tags</li>
+<li>consists primarily of merges from develop and bugfix</li>
+</ul>
+</div>
+</div><div id="git_workflow/02_workflow" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="git_workflow/02_workflow/7">
+<h1>Develop</h1>
+
+<ul>
+<li>holds latest working code</li>
+<li>most commits should be merges from minor branches</li>
+<li>may have single commits which fix unforseen issues from minor branches</li>
+</ul>
+</div>
+</div><div id="git_workflow/02_workflow" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="git_workflow/02_workflow/8">
+<h1>Bugfix</h1>
+
+<ul>
+<li>is based on the master branch</li>
+<li>holds bugfixes to the stable code</li>
+<li>should be merged into both develop and master</li>
+<li>contains both single commits for small bugfixes
+and merges of <em>bug/</em> branches for large ones</li>
+</ul>
+</div>
+</div><div id="git_workflow/02_workflow" class="slide subsection" data-transition="cover"><div class="content subsection" ref="git_workflow/02_workflow/9">
+<h1>Minor Branches</h1>
+
+<p>To make your life more organized...</p>
+</div>
+</div><div id="git_workflow/02_workflow" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="git_workflow/02_workflow/10">
+<h1>Feature Branches</h1>
+
+<ul>
+<li>take the form 'feature/<em>some-feature-name</em>'</li>
+<li>hold commits for feature development</li>
+<li>should only be merged into develop</li>
+</ul>
+</div>
+</div><div id="git_workflow/02_workflow" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="git_workflow/02_workflow/11">
+<h1>Bug Branches</h1>
+
+<ul>
+<li>take the form 'bug/<em>bug-number</em>-<em>bug-description</em>'</li>
+<li>hold commits for bug fixes</li>
+<li>should be merged into bugfix</li>
+</ul>
+</div>
+</div><div id="git_workflow/02_workflow" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="git_workflow/02_workflow/12">
+<h1>Refactor Branches</h1>
+
+<ul>
+<li>take the form 'refactor/<em>description-of-refactor</em>'</li>
+<li>hold commits for major or minor code refactorings</li>
+<li>should be merged into develop</li>
+</ul>
+</div>
+</div><div id="git_workflow/02_workflow" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="git_workflow/02_workflow/13">
+<h1>Minor Branches...</h1>
+
+<ul>
+<li>may contain which is incomplete and/or non-functional</li>
+<li>should not have public-facing code which breaks 
+the build or tests</li>
+</ul>
+</div>
+</div><div id="git_workflow/02_workflow" class="slide small" data-transition="none"><div class="content small" ref="git_workflow/02_workflow/14">
+<h1>Public vs Private Commit Series</h1>
+
+<p>When you are working on a <strong>local machine</strong> or
+<strong>personal GH fork</strong>, you may have a series of commits
+which looks like this:</p>
+
+<ul>
+<li>implemented feature part 1</li>
+<li>fixed issue in feature part 1 implementation</li>
+<li>implemented feature part 2 and fixed issue in feature part 1</li>
+<li>implemented feature part 3</li>
+<li>implemented feature part 4 and added to feature part 2</li>
+<li>fixed feature part 3 and added to feature part 1</li>
+</ul>
+
+<p>This is ok for while you are developing...</p>
+</div>
+</div><div id="git_workflow/02_workflow" class="slide small" data-transition="none"><div class="content small" ref="git_workflow/02_workflow/15">
+<h1>However...</h1>
+
+<p>This kind of commit series <em>should not</em> be pushed to the
+central (upstream) GH repository.  Before you push or submit
+a pull request, you should rebase the changes to look like this:</p>
+
+<ul>
+<li>implemented part 1</li>
+<li>implemented part 2</li>
+<li>implemented part 3</li>
+<li>implemented part 4</li>
+</ul>
+
+<p>If part 2 breaks existing functionality without part three, then
+there should really <em>only be three parts</em>:</p>
+
+<ul>
+<li>implemented part 1</li>
+<li>implemented part 2 (parts 2 and 3)</li>
+<li>implemented part 3 (part 4)</li>
+</ul>
+</div>
+</div><div id="git_workflow/03_versioning" class="slide " data-transition="cover"><div class="content " ref="git_workflow/03_versioning/1">
+<h1>Semantic Versioning</h1>
+
+<p>or <em>"How to convey meaning without really trying"</em></p>
+</div>
+</div><div id="git_workflow/03_versioning" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="git_workflow/03_versioning/2">
+<h1>Version Numbers...</h1>
+
+<ul>
+<li>generally mean something</li>
+<li>the meaning changes between projects</li>
+<li>end-users are not quite sure what version changes mean</li>
+<li>developers are not quite sure when to change what version numbers</li>
+</ul>
+</div>
+</div><div id="git_workflow/03_versioning" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="git_workflow/03_versioning/3">
+<h1>Introducing Semantic Versioning!</h1>
+
+<ul>
+<li>takes the form of <code>MAJOR.MINOR.PATCH</code> (with some stuff after)</li>
+<li>
+<code>MAJOR</code> means incompatible API change</li>
+<li>
+<code>MINOR</code> means backwards-compatible API change</li>
+<li>
+<code>PATCH</code> means no API change</li>
+</ul>
+</div>
+</div><div id="git_workflow/03_versioning" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="git_workflow/03_versioning/4">
+<h1>And Suffixes!</h1>
+
+<ul>
+<li>
+<code>-label</code> (alpha, beta, rc)</li>
+<li>
+<code>-label.number</code> (e.g. <code>-beta.2</code> or <code>-rc.1</code>)</li>
+<li>
+<code>+metadata</code> (e.g. <code>+sha.12345</code>, comes after label if present)</li>
+</ul>
+</div>
+</div><div id="git_workflow/03_versioning" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="git_workflow/03_versioning/5">
+<h1>Benefits</h1>
+
+<ul>
+<li>Users know what version changes mean</li>
+<li>Developers know when to increment what</li>
+<li>Dependency listing know what versions they can accept easily ('&gt;=4.3.x &amp;&amp; &lt; 5.0.0' means 'version the API of version 4 with the .3 improvements')</li>
+</ul>
+</div>
+</div><div id="github_info/01_TOC" class="slide " data-transition="cover"><div class="content " ref="github_info/01_TOC/1">
+<h1>Sections</h1>
+
+<ul>
+<li>Overview</li>
+<li>How To Git</li>
+<li>Git Workflow</li>
+<li><strong>How To GitHub</strong></li>
+<li>Closing Remarks</li>
+</ul>
+</div>
+</div><div id="github_info/01_TOC" class="slide " data-transition="cover"><div class="content " ref="github_info/01_TOC/2">
+<h1>How To GitHub</h1>
+</div>
+</div><div id="github_info/01_TOC" class="slide " data-transition="none"><div class="content " ref="github_info/01_TOC/3">
+<h1>F*ck it, we'll do it live :-P</h1>
+
+<p><a href="https://github.com/">https://github.com/</a></p>
+</div>
+</div><div id="github_info/01_TOC" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="github_info/01_TOC/4">
+<h1>Commit Hooks</h1>
+
+<ul>
+<li>'Fixes #123', 'Closes #123', etc --&gt; close bug or pull request #123 (and add a comment)</li>
+<li>'#123' --&gt; add an entry to bug or pull request #123 linking to the commit</li>
+</ul>
+</div>
+</div><div id="closing_remarks/01_TOC" class="slide " data-transition="cover"><div class="content " ref="closing_remarks/01_TOC">
+<h1>Sections</h1>
+
+<ul>
+<li>Overview</li>
+<li>How To Git</li>
+<li>Git Workflow</li>
+<li>How To GitHub</li>
+<li><strong>Closing Remarks</strong></li>
+</ul>
+</div>
+</div><div id="closing_remarks/02_remarks" class="slide " data-transition="cover"><div class="content " ref="closing_remarks/02_remarks/1">
+<h1>More Resources</h1>
+
+<p>See the <code>README.md</code> file in the various directories
+in the <code>NeuronRobotics/bowler_style_information</code>.</p>
+</div>
+</div><div id="closing_remarks/02_remarks" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="closing_remarks/02_remarks/2">
+<h1>A brief aside on documentation and coding styles</h1>
+
+<ul>
+<li>use a defined coding style across all files in a particular language</li>
+<li>always write inline documentation in either the preferred language format or Markdown</li>
+</ul>
+</div>
+</div><div id="closing_remarks/02_remarks" class="slide " data-transition="none"><div class="content " ref="closing_remarks/02_remarks/3">
+<h1>Vim</h1>
+
+<p><a href="https://github.com/tpope/vim-fugitive">Vim Fugitive by @tpope</a> FTW</p>
+</div>
+</div><div id="closing_remarks/02_remarks" class="slide " data-transition="none"><div class="content " ref="closing_remarks/02_remarks/4">
+<h1>Questions?</h1>
+</div>
+</div></div>
+<div id="pauseScreen">
+  PAUSED
+</div>
+
+</body>
+</html>
